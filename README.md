@@ -1,2 +1,5 @@
-# cursor.edu
-My repository for learn full-stack python dev in course by CURSOR.EDUCATION
+## Repository for my scripts/programs for study
+
+# General language -> Python / JS
+
+# andrsj.derkach@gmail.com
