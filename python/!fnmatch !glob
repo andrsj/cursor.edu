@@ -1,0 +1,32 @@
+import fnmatch
+
+fnmatch(filename, pattern)
+fnmatchcase(filename, pattern)
+
+
+
+
+# Приклад пошуку файлів в дереві каталогу
+# з допомоги функції os.walk(), модуля fnmatch і генератора
+
+def findall(topdir, pattern):
+    for path, files, dirs in os.walk(topdir):
+        for name in files:
+            if fnmatch.fnmatch(name,pattern):
+                yield os.path.join(path,name)
+
+# Найти всі файли з рощширенням .py
+for pyfile in findall(“.”,”*.py”):
+    print(pyfile)
+
+
+
+
+import glob
+
+# Модуль glob дозволяє виконати пошук списку всіх імен файлів в каталозі
+# відповідних вказаному патерну, з використанням правил командної оболочки Unix
+
+glob(pattern)   ->  Повертає список шляхів до файлу, відповіному шаблону
+iglob(pattern)  ->  Те саме, але ітератор
+

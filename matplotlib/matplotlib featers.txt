@@ -1,0 +1,167 @@
+import matplotlib.pyplot as plt
+
+
+plt.rcParams.update({'figure.autolayout': True})
+
+
+
+
+plt.plot(x,y,"r",x,z,"b")
+# or: 
+plt.plot(x,y,"r")
+plt.plot(x,z,"b")
+
+Markers - marker
+[ '+' | ',' | '.' | '1' | '2' | '3' | '4' ]
+
+character description
+'.' point marker
+',' pixel marker
+'o' circle marker
+'v' triangle_down marker
+'^' triangle_up marker
+'<' triangle_left marker
+'>' triangle_right marker
+'1' tri_down marker
+'2' tri_up marker
+'3' tri_left marker
+'4' tri_right marker
+'s' square marker
+'p' pentagon marker
+'*' star marker
+'h' hexagon1 marker
+'H' hexagon2 marker
+'+' plus marker
+'x' x marker
+'D' diamond marker
+'d' thin_diamond marker
+'|' vline marker
+'_' hline marker
+markeredgecolor or mec - any matplotlib color
+markersize or ms - float 
+
+Linestyle - linestyle or ls 
+[ '-' | '--' | '-.' | ':' | 'steps' | ...]
+Linewidth - linewidth or lw
+[1, 2, 3, 4]
+Data - data
+(np.array xdata, np.array ydata)
+
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro') # red | points
+											# "g^" - triangels
+
+
+TEXT
+
+plt.title(r'$\sigma_i=15$')
+plt.text(60, .025, r'$\mu=100,\ \sigma=15$')
+
+plt.xlabel("")
+plt.ylabel("")
+plt.title("")
+plt.grid(True, color = "g", linestyle = "-", linewidth = 5)
+plt.show()
+
+
+
+xnumbers = np.linespace(6,7,15)
+ynumbers = np.linespace(-1,1,11)
+plt.xticks(xnumbers)
+plt.yticks(ynumbers)
+
+
+plt.axis([x1,x2,y1,y2])
+plt.xlim([0,1])
+plt.ylim([-10,10])
+
+
+
+
+# Subplots
+plt.figure()
+
+fig.subplot(221)
+fig.subplot(222)
+fig.subplot(212)
+
+# Graphics:
+# [/][/]
+# [  / ]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+plt.subplot(222)  # 2 row 2 col 2 index
+fig, axs = plt.subplots(2, 2, constrained_layout=True)
+
+# Legend
+plt.plot(x1,y1, label = "")
+plt.plot(x2,y2, label = "")
+plt.legend()
+Or:	plt.legend(["line1","line2"])
+
+
+# Bar and Hist
+plt.bar(x,y, label = "", color = "r")
+
+bins = [0,10,20,30]
+plt.hist(x, bins, rwidth = 0.8)
+
+
+
+
+# Pie
+slice = [1,2,3,4]
+labels = ['1','2','3','4']
+colors = ['r','c','m','k']
+plt.pie(slice,labels = labels, colors = colors, autopct = "%1,1f%%")
+
+
+
+
+
+# Setting display
+plt.subplot_adjust(left = 0.9, bottom = ..., ...) 
+
+    # xaxis
+ax1.yaxis.label.set_color("r")
+ax1.set_yticks([0,25,50,75]) 
+
+ax1.fill_between(???)
+
+ax1.spines["left"].set_color('c')
+ax1.spines["left"].set_linewidth(5)
+ax1.spines["right"].set_visible(False)
+
+ax1.tick_params(axis = "x", colors = "#A0A0A0") 
+
+
+
+# Style
+from matplotlib import style
+style.use('ggplot')
+
+print(plt.style.available) # LIST OF STYLES
+
+['bmh', 'classic', 'dark_background', 'fast', 'fivethirtyeight', 'ggplot', 'grayscale', 'seaborn-bright', 'seaborn-colorblind', 'seaborn-dark-palette', 'seaborn-dark', 'seaborn-darkgrid', 'seaborn-deep', 'seaborn-muted', 'seaborn-notebook', 'seaborn-paper', 'seaborn-pastel', 'seaborn-poster', 'seaborn-talk', 'seaborn-ticks', 'seaborn-white', 'seaborn-whitegrid', 'seaborn', 'Solarize_Light2', 'tableau-colorblind10', '_classic_test']
+
+print(plt.__file__) 
+
+
+
+
+fig, ax1 = plt.subplots()
+ax2 = ax1.twinx()
+
+
+plt.figure(figsize = (12,6))
+
+f = plt.figure()
+ax = f.add_subplot(111)
+plt.text(1.1, 0.9,'matplotlib',
+    horizontalalignment='center',
+    verticalalignment='center',
+    transform = ax.transAxes)
+
+
+ax2.set_xticks([0., .5*np.pi, np.pi, 1.5*np.pi, 2*np.pi])
+ax2.set_xticklabels(["0", r"$\frac{1}{2}\pi$",r"$\pi$", r"$\frac{3}{2}\pi$", r"$2\pi$"])
+# 0 - 1\2pi - pi - 3\2pi - 2pi for x label
+310 Symbols

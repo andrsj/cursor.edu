@@ -1,0 +1,35 @@
+cmp(file1, file2 [, shallow])
+Порівняння двох файлів
+Вони будуть рівні, якщо os.stat() поверне одинакові значення
+shallow == False -> додатково перевіряється вміст файлів
+
+cmpfiles(dir1, dir2, common [, shallow])
+Порівняння файлів зі списку common в директоріях dir1 i dir2
+Повертає кортеж з трьома списками імен файлів (match, mismatch, errors)
+shallow == False -> додатково перевіряється вміст файлів
+
+
+
+dircmp(dir1, dir2 [, ignore [, hide]])
+Створює об'єкт порівняння  каталогів
+
+d.report()
+Порівнює каталоги і виводить відгук в sys.stdout
+
+d.report_partial_closure()
+Каталоги і підкаталоги наступного рівня
+
+d.report_full_closure()
+Каталоги і підкаталоги всіх рівнів
+
+d.left_list     left
+d.right_list    right
+d.common        left and right
+
+d.common_dirs   ->  Список спільних підкаталогів
+d.common_files  ->  Список спільних файлів
+
+d.same_files    ->  Однакові
+d.diff_files    ->  Різні
+d.funny_files   ->  Не можливо порівняти
+

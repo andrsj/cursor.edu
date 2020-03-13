@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Flask Example</title>
+</head>
+
+<body>
+    {% if name %}
+        <h1>Hello, {{name}}!</h1>
+    {% endif %}
+    <form action = '/form' method = 'POST'>
+        Name: <input type = 'text' name = 'name' id = 'name'>
+        Last: <input type = 'text' name = 'last' id = 'name'>
+        Kurs: <input type = 'text' name = 'kurs' id = 'kurs'>
+        <input type = 'submit' value = 'add'>
+    </form>
+    <hr>
+        
+        {% for student in students %}
+            <h3>{{student.name}}</h3>
+            <h3>{{student.last}}</h3>
+            <h3>{{student.kurs}}</h3>
+            <hr>
+            <a href = '/form/delete/{{student.id}}'>Удолить</a>
+        {% endfor %}
+    <hr>
+
+</body>
+</html>

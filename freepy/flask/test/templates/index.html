@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1>Index</h1>
+{% endblock %}
+
+{% block body %}
+{% if name %}
+<p>Hello, {{ name }}</p>
+{% else %}
+<p>Hello, anonymus</p>
+{% endif %}
+{% endblock %}
