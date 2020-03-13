@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <title>Мотемотічка довела</title>
+</head>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
+<body>
+    
+    <!-- ВЕРХНЯ ЧАСТИНА САЙТУ -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-1">МОТЕМОТІЧКА <span class="badge badge-primary">Math</span></h1>
+        </div>
+    </div>
+
+
+    <!-- НАВБАР -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Контейнер -->
+        <div class="container">
+            <a class="navbar-brand" href="#">МОТЕМОТІЧКА</a>
+            <!-- Кнопка, що буде відображатися, при малому екрані -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Блок з іншими силками -->
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Вкладка АДЫН</a>
+                    </li>
+                    <!-- Випадаючий список -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Менюшка</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#">Вкладка АДЫН</a>
+                            <a class="dropdown-item" href="#">Вкладка ДВЫА</a>
+                            <a class="dropdown-item" href="#">Вкладка ТРЫА</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Просто форма -->
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" placeholder="Search" aria-label="Search" type="text">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Лінія -->
+    <hr class="featurette-divider">
+
+    <!-- Контейнер -->
+    <div class="container marketing">
+        <!-- Блок з першою задачою -->
+        <div class="row featurette">
+            <!-- Блок самої задачі, що займає половину ширини, а при малому розмірі - всю -->
+            <div class="col-md-6">
+                <h2 class="featurette-heading">Задача АДЫН</h2>
+                <p class="lead">1 + 1 ?</p>
+                <input class="form-control w-100" placeholder="Введіть відповідь" type="text">
+                <button type="button" class="btn ">Відповісти</button>
+            </div>
+            <!-- Блок реклами))) що займає половину ширини, а при малому розмірі - всю -->
+            <div class="col-md-6">
+                <!-- Блок вмісту реклами, можна вставити що хоч) -->
+                <div class="advertising">Advertising</div>
+            </div>
+        </div>
+        
+        <!-- Лінія -->
+        <hr class="featurette-divider">
+        
+        <!-- Блок другої задачі -->
+        <div class="row featurette">
+            <!-- Блок, що буде другий по осі Х -->
+            <div class="col-md-6 order-md-2">
+                <h2 class="featurette-heading">Задача ДВЫА</h2>
+                <p class="lead">100 * 100 ?</p>
+                <input class="form-control w-100" placeholder="Введіть відповідь" type="text">
+                <button type="button" class="btn ">Відповісти</button>
+            </div>
+            <!-- Блок, що буде ПЕРШИЙ по осі Х -->
+            <div class="col-md-6 order-md-1">
+                <div class="advertising">Advertising</div>
+            </div>
+        </div>
+        
+        <!-- Лінія -->
+        <hr class="featurette-divider">
+        
+        <div class="row featurette">
+            <div class="col-md-6">
+                <h2 class="featurette-heading">Задача ТРЫА</h2>
+                <p class="lead">T T F F</p>
+                <form name="zadach">
+                    <input name="zadach" type="checkbox" id="check_one_one">
+                    <label for="check_one_one">One</label>
+                    <input name="zadach" type="checkbox" id="check_one_two">
+                    <label for="check_one_two">Two</label>
+                    <input name="zadach" type="checkbox" id="check_one_three">
+                    <label for="check_one_three">Three</label>
+                    <input name="zadach" type="checkbox" id="check_one_four">
+                    <label for="check_one_four">Four</label>
+                </form>
+                <button type="button" class="btn ">Відповісти</button>
+            </div>
+            <div class="col-md-6">
+                <div class="advertising">Advertising</div>
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 order-md-2">
+                <h2 class="featurette-heading">Задача Чотири</h2>
+                <p class="lead">F F F T</p>
+                <form name="zadacha">
+                    <input name="zadacha" type="radio" id="radio_one_one">
+                    <label for="radio_one_one">One</label>
+                    <input name="zadacha" type="radio" id="radio_one_two">
+                    <label for="radio_one_two">Two</label>
+                    <input name="zadacha" type="radio" id="radio_one_three">
+                    <label for="radio_one_three">Three</label>
+                    <input name="zadacha" type="radio" id="radio_one_four">
+                    <label for="radio_one_four">Four</label>
+                </form>
+                <button type="button" class="btn ">Відповісти</button>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="advertising">Advertising</div>
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6">
+                <h2 class="featurette-heading">Задача Пьєать</h2>
+                <p class="lead">Задача Пьєать</p>
+                <input class="form-control w-100" placeholder="Введіть відповідь 1" type="text">
+                <input class="form-control w-100" placeholder="Введіть відповідь 2" type="text">
+                <button type="button" class="btn ">Відповісти</button>
+            </div>
+            <div class="col-md-6">
+                <div class="advertising">Advertising</div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 order-md-2">
+                <h2 class="featurette-heading">Задача 6</h2>
+                <p class="lead">Задача 6</p>
+                <input class="form-control w-100" placeholder="Введіть відповідь 1" type="text">
+                <input class="form-control w-100" placeholder="Введіть відповідь 2" type="text">
+                <button type="button" class="btn ">Відповісти</button>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="advertising">Advertising</div>
+            </div>
+        </div>
+
+        <!-- Лінія -->
+        <hr class="featurette-divider">
+
+    </div>
+
+    <!-- Футер -->
+    <div class="jumbotron text-center footer">
+        <h2>Виконала Джюлька для лабораторних робіт</h2>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<style>
+ul li{
+    list-style: none;
+    margin-left: -40px;
+}
+.container{
+    margin-top: 10px;
+}
+</style>
+<body>
+    <div class="container">
+        <input type="text" onkeyup="filter()" id="inputs" placeholder="enter filter">
+        <ul id="myUL">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+            <li><a href="#">Five</a></li>
+            <li><a href="#">Six</a></li>
+            <li><a href="#">Seven</a></li>
+            <li><a href="#">Eight</a></li>
+            <li><a href="#">Nine</a></li>
+            <li><a href="#">Ten</a></li>
+        </ul>
+    </div>
+    <script src="js/filter.js"></script>
+
+    <div class="container mt-3">
+        <h2>Filter Anything</h2>
+        <p>Type something in the input field to search for a specific text inside the div element with id="myDIV":</p>
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <div id="myDIV" class="mt-3">
+            <p>I am a paragraph.</p>
+            <div>I am a div element inside div.</div>
+            <button class="btn">I am a button</button>
+            <button class="btn btn-info">Another button</button>
+            <p>Another paragraph.</p>
+        </div>
+    </div>
+                
+    <script>
+    $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myDIV *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+    </script>
+</body>
+</html>

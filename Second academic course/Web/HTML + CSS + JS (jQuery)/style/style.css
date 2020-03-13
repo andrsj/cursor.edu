@@ -1,0 +1,103 @@
+body > .row{
+    margin: 0;
+}
+nav {    background: linear-gradient(90deg,#FB777B,#F8E5CD);}
+
+button[data-target="#myModal1"]{
+    background: linear-gradient(-90deg,#FB777B,#F8E5CD);
+    border: none;
+    outline: none;
+    color: black;
+}
+button[data-target="#myModal2"]{
+    background: linear-gradient(90deg,#C0F8E8,#E6F7FD);
+    border: none;
+    outline: none;
+    color: black;
+}
+
+.carousel-item{
+    height: 700px;
+}
+.carousel-caption{
+    color: black;
+}
+.carousel-caption button{
+    background: linear-gradient(-90deg,#FB777B,#F8E5CD);
+    border: none;
+    outline: none;
+    color: black;
+}
+.carousel-item .container input {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.carousel-item img{
+    height: 500px; 
+    margin-left: 20%; 
+    margin-top: 20px;
+}
+.carousel-inner .carousel-item{
+    /* background: linear-gradient(90deg, #3f51b5, #00bcd4); */
+    background: linear-gradient(90deg,#C0F8E8,#E6F7FD);
+}
+ol.carousel-indicators li.active{
+    background-color: red;
+}
+
+.collapse_content{
+    width: 25%;
+    margin: 2px;
+    margin-top: 10px;
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 18px;
+    transition-duration: 0.2s;
+}
+
+.nav-tabs{
+    border-radius: 0 10px 10px 10px;
+}
+.tab-content{
+    background: linear-gradient(90deg,#FB777B,#F8E5CD);
+    min-height: 100px;
+    border-radius: 0 10px 10px 10px;
+}
+
+ul.tabs li a{
+    color: red;
+}
+
+.lol{
+    background: rgba(226,226,226,1)  
+    linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 19%, rgba(254,254,254,1) 90%);
+}
+.figure img{
+    margin: 20px;
+}
+.social img{ 
+    height: 100px; 
+    padding: 10px;
+}
+.social img[src*="face"]{
+    background-color: #007bff;
+    border-radius: 20px;
+}
+.social img[src*="ins"]{
+    background: linear-gradient(45deg, #FCAE45, #A234B0);
+    border-radius: 20px;
+}
+.social img[src*="vk"]{
+    background-color: #4C8BF5;
+    border-radius: 20px;
+}
+.social img[src*="tele"]{
+    background-color: #29A0DC;
+    border-radius: 20px;
+}
+.social img[src*="you"]{
+    background: linear-gradient(45deg, red,red,lightgrey);
+    border-radius: 20px;
+}

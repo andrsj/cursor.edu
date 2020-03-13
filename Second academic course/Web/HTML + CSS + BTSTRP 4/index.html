@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+    <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="" rel="icon"> 
+    <title>Математика для дітей</title>
+</head>
+
+<style>
+.myDiv{
+    display: none;
+}
+</style>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+
+<body >
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/eye.svg" width="30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Математика <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Інші предмети</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#">Скоро буде</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Для батьків</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" href="#">Матеріали для дітей</a>
+                    <a class="dropdown-item" href="#">Навчання дітей по відео</a>
+                    <a class="dropdown-item" href="#">Корисні поради для батьків</a>
+                </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Пошук">
+            </form>
+        </div>
+    </nav>
+
+      
+<main role="main">      
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Привіт, учню!</h1>
+                
+                <p class="col-6">Сьогодні ми пройдемо пару задач по геометрії. Навчимося рахувати та обчислювати 
+                    геометричні фігури, досліджувати їх властивості та навчимося їх розрізняти.
+                </p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Більше задач »</a></p>
+            </div>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <h2>Алгебра</h2>
+                <p>Алгебра - наука , що займається числами та методами їх обрахування. 
+                    Звісно без алгебри нікуди, так як вона пригодиться всюди , але пам'ятай: 
+                    лише знаючи усю математику , ти зможеш досягти успіху </p>
+                <p><a class="btn btn-secondary" href="#" role="button">Уроки алгебри »</a></p>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Геометрія</h2>
+                <p>Цариця науки ніяк не обійдеться без фігурного представлення чисел. Завдяки геометрії 
+                    Ти зможеш описати світ через фігури та спроектувати різні предмети такими, якими Ти хочеш
+                </p>
+                <p><a class="btn btn-secondary disabled" href="#" role="button">Уроки геометрії »</a></p>
+            </div>
+        </div>       
+    </div> <!-- /container -->
+
+    <hr class="w-100">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/dot-circle.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                    <h1>Задача 1</h1>
+                    <p>Скільки КРУГІВ є на зображені? </p>
+                    
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>Нагадаую, що КРУГ - це фігура, що заповнена всередині)</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <img src="img/clock.svg">
+                    <div class="carousel-caption text-left">
+                    <h1>Задача 2</h1>
+                    <p>Скільки є фігур в годиннику?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>Лінія це теж фігура</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <img src="img/star.svg">
+                    <div class="carousel-caption text-left">
+                    <h1>Задача 3</h1>
+                    <p>Скільки прямих є в зірці?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>Порахуй окремо прямі для одного кута і помнож їх на к-сть кутів</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/arrow-right.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption">
+                    <h1>Задача 4</h1>
+                    <p>Скільки прямих містить в собі стрілка?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>Порахуй їх прямі</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                    <div class="container">
+                        <img src="img/exclamation-triangle.svg">
+                        <div class="carousel-caption text-right">
+                        <h1>Задача 5</h1>
+                        <p>Скільки сторін є в значку трикутника?</p>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>В трикутника ТРИ кути, значить ...</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            <div class="carousel-item">
+                <img src="img/bicycle.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                    <h1>Задача 6</h1>
+                    <p>Скільки фігур має зображення "велосипед"?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>Фігури , які тут присутні: коло, паралелепіпед та пряма</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item figure">
+                <img src="img/circle.svg">
+                <img src="img/circle.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                    <h1>Задача 7</h1>
+                    <p>Чи однакові фігури?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-25" type="text" placeholder="Введіть відповідь">
+                        <div>
+                            <button type="button" class="btn btn-primary w-25" data-toggle="collapse" 
+                            data-target="#demo1">Підказка</button>
+                            <div id="demo1" class="collapse">
+                                <p>Подивись на їх розміри</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</main>
+
+<hr class="w-100">
+
+<div class="container mt-3">
+    <h2>Сьогодні ми навчилися:</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">|     1      |</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">|      2      |</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">|      3      |</a>
+    </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+            <h3>Проектувати предмети через фігури</h3>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Рахувати фігури в предметах</h3>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+            <h3>Порівнювати фігури між собою</h3>
+        </div>
+    </div>
+</div>
+
+<hr class="w-100">
+
+
+
+<div class="container-fluid jumbotron lol">
+    <div class="row">
+        <div class="col-4">
+            <h3>Сайт розроблений для лабораторної роботи</h3>
+            Студентом групи ФеІ-22
+            <br>
+            Деркачем Андрієм
+        </div>
+        <div class="col-6 offset-1 social">
+            <a href="#"><img src="img/facebook.svg"></a>
+            <a href="#"><img src="img/instagram.svg"></a>
+            <a href="#"><img src="img/vk.svg"></a>
+            <a href="#"><img src="img/telegram.svg"></a>
+            <a href="#"><img src="img/youtube.svg"></a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

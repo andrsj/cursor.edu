@@ -1,0 +1,119 @@
+/* Variables
+---------------------------------*/
+/* Global
+---------------------------------*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Container
+---------------------------------*/
+.gallery {
+  height: 500px;
+  margin: 2em auto;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2em;
+  position: relative;
+}
+
+/* Images
+---------------------------------*/
+.gallery-item {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  transition: 0.1s all ease;
+}
+.gallery-item.active {
+  left: 0;
+  opacity: 1;
+  z-index: 20;
+}
+
+/* Controls
+---------------------------------*/
+.gallery-controls {
+  width: 100%;
+}
+
+.btn-prev,
+.btn-next {
+  background: none;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  font-size: 5rem;
+  line-height: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  z-index: 10;
+  transition: 0.8s ease;
+}
+.btn-prev:hover,
+.btn-next:hover {
+  color: #000000;
+  /* transform: translateY(-28px); */
+}
+
+.btn-next {
+  right: -1.5em;
+}
+.btn-next::after {
+  content: "\0203A";
+}
+
+.btn-prev {
+  left: -1.5em;
+}
+.btn-prev::before {
+  content: "\02039";
+}
+
+/* Control nav (ie. dots)
+---------------------------------*/
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.dot {
+  background: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.35em;
+  border-radius: 100%;
+  text-indent: -99999px;
+  transition: 0.3s all ease;
+}
+.dot:hover {
+  background: #000000;
+}
+.dot.active {
+  background: #000000;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link href="" rel="icon"> 
+	    <meta charset="UTF-8">
+        <title>Перша програма на C#</title>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul class="nav">
+                <li class="nav"><a href="#">Home</a></li>
+                <li class="nav"><a href="#">Lessons</a></li>
+                <li class="nav"><a href="#">About</a></li>
+                <li class="nav"><a href="#">Contacts</a></li>
+            </ul>
+            <div class="iconmenu"><a href="" class="buttonmenu"><img src="img/search.svg"></a></div>
+        </div>
+        <div class="grad">
+            <div class="title">
+                <h1>Перша програма на C#</h1>
+                <p>На даному уроці ми напишемо програму рішення квадратного рівняння!<br>
+                Для перегляду теорії розгорни лівий квадрат, для рішення - правий!</p>
+            </div>
+            <main class="blockmain">
+                <div class="containermain">
+                    <main class="contentmain">
+                        <div class="left_animate_div">
+                            <p> Для того, щоб почати писати програму, треба спочатку написати алгоритм програми
+                                (або найти його) , щоб потім по цьому алгоритму писати код програми, яку
+                                хочемо реалізувати. Є два види подачі алгоритму, якими користуються найчастіше:</p>
+                            <ul>
+                                <li>Текстовий</li>
+                                <li>Візуальний</li>
+                            </ul>
+                            <p>
+                                Текстовий алгоритм подається у вигляді рядку тексту, де описується порядок роботи
+                                програми, інколи використовують псевдокод (але можна тільки словесно описати)
+                            </p>
+                            <ol>
+                                <li>Ввести a,b,c</li>
+                                <li>Знайти дискримінант</li>
+                                <li>D &#62; 0?</li>
+                                <li>
+                                    <ul>
+                                        <li>Так:</li>
+                                        <li style="list-style-type: none">
+                                            <ul>
+                                                <li>Знайти корені рівняння</li>
+                                                <li>Вивести їх значення</li>
+                                            </ul>
+                                        </li>
+                                        <li>Ні:</li>
+                                        <li style="list-style-type: none">
+                                            <ul>
+                                                <li>D &#61; 0?</li>
+                                                <li style="list-style-type: none">
+                                                    <ul>
+                                                        <li>Так:</li>
+                                                        <li style="list-style-type: none">Знаходимо значення кореня</li>
+                                                        <li style="list-style-type: none">Виводимо значення</li>
+                                                        <li>Ні:</li>
+                                                        <li style="list-style-type: none">Знаходимо комплексі корені</li>
+                                                        <li style="list-style-type: none">Виводимо значення</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Кінець програми</li>
+                            </ol>
+                            <p> Візуальний алгоритм подається у вигляді блок схеми, де кожна дія зображена в окремих
+                                квадратах, кружечках, прямокутниках і т.д. (Кожна фігура відповідає за окрему дію і
+                                має свої властивості)
+                            </p>
+                            <img src="img/block_kv_rv.bmp" alt="Зображення блок схеми" width="100%"> 
+                        </div>
+                        <div class="right_animate_div">
+
+                        </div>
+                        <div class="mainwarp">
+                            <div class="warp">
+                                <div class="card">
+                                    <div class="front"><span></span></div>
+                                    <div class="back"><span><img src="img/1.png" height="100px"></span></div>
+                                </div>
+                            </div>
+                            <div class="warp" id="two">
+                                <div class="card">
+                                    <div class="front"><span></span></div>
+                                    <div class="back"><span><img src="img/2.png" height="100px"></span></div>
+                                </div>
+                            </div>
+                            <div class="warp" id="three">
+                                <div class="card">
+                                    <div class="front"><span></span></div>
+                                    <div class="back"><span><img src="img/3.png" height="100px"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="section">
+                            <div class="container2">
+                                <div class="card1"></div>
+                            </div>
+                        </div> -->
+                        <div class="section">
+
+                                <ul class="first" >
+                                        <li class="first rotate" >
+                                            <a href="#">
+                                                <img src="img/vk.svg" class="four absolute">
+                                                <img src="img/vk.svg" class="three absolute">
+                                                <img src="img/vk.svg" class="two absolute">
+                                                <img src="img/vk.svg" class="one absolute">           
+                                                <img src="img/vk.svg" class="home">
+                                            </a>
+                                        </li>
+                                        <li class="first rotate" >
+                                            <a href="#">
+                                                <img src="img/google.svg" class="four absolute">
+                                                <img src="img/google.svg" class="three absolute">
+                                                <img src="img/google.svg" class="two absolute">
+                                                <img src="img/google.svg" class="one absolute">           
+                                                <img src="img/google.svg" class="home">
+                                            </a>
+                                        </li>
+                                        <li class="first rotate" >
+                                            <a href="#">
+                                                <img src="img/youtube.svg" class="four absolute">
+                                                <img src="img/youtube.svg" class="three absolute">
+                                                <img src="img/youtube.svg" class="two absolute">
+                                                <img src="img/youtube.svg" class="one absolute">           
+                                                <img src="img/youtube.svg" class="home">
+                                            </a>
+                                        </li>
+                                        <li class="first rotate" >
+                                            <a href="#">
+                                                <img src="img/facebook.svg" class="four absolute">
+                                                <img src="img/facebook.svg" class="three absolute">
+                                                <img src="img/facebook.svg" class="two absolute">
+                                                <img src="img/facebook.svg" class="one absolute">           
+                                                <img src="img/facebook.svg" class="home">
+                                            </a>
+                                        </li>
+                                        <li class="first rotate" >
+                                            <a href="#">
+                                                <img src="img/telegram.svg" class="four absolute">
+                                                <img src="img/telegram.svg" class="three absolute">
+                                                <img src="img/telegram.svg" class="two absolute">
+                                                <img src="img/telegram.svg" class="one absolute">           
+                                                <img src="img/telegram.svg" class="home">
+                                            </a>
+                                        </li>
+                                        <li class="first rotate" >
+                                            <a href="#">
+                                                <img src="img/instagram.svg" class="four absolute">
+                                                <img src="img/instagram.svg" class="three absolute">
+                                                <img src="img/instagram.svg" class="two absolute">
+                                                <img src="img/instagram.svg" class="one absolute">           
+                                                <img src="img/instagram.svg" class="home">
+                                            </a>
+                                        </li>
+                                </ul>
+
+                        </div>
+                    </main>
+                    <aside class="rightbar">
+                        <h3>Form</h3>
+                        <form class="formbox">
+                            <input type="text" placeholder="Login">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="Login">
+                        </form>
+                    </aside>
+                </div>
+            </main>
+        
+            <footer>
+                    <div class="containerfooter">
+                    </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

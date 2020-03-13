@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Document</title>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
+<script src="js/arlanoid.js"></script>
+
+</head>
+<body onload="init();drawScene()">
+
+    <nav class="navbar navbar-dark bg-info">
+        <a class="navbar-brand" href="#">This site created by Evgenia Solnichok</a>
+        <button class="btn btn-outline-info collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lessons</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">About me <span class="badge badge-pill badge-primary">Baby</span></a>
+                        <a class="dropdown-item" href="#">About cute girl <span class="badge badge-pill badge-primary"> Hot*</span></a>
+                        <a class="dropdown-item" href="#">About lovely Evgenia <span class="badge badge-pill badge-primary">Beautifull</span></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control w-100" placeholder="Search" aria-label="Search" type="text">
+            </form>
+        </div>
+    </nav>
+
+    <hr class="featurette-divider">
+
+    <div class="container info">
+        <h2>Here you will find some information about Math</h2>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row m-auto">
+        <div class="card col-12 col-md mx-1 my-2">
+            <div class="card-body">
+                <h4 class="card-title">Geometry</h4>
+                <img src="img/photo (1).jpg" alt="photo(1).jpg">
+                <p class="card-text">На екзамені користуватися калькуляторами не можна!</p>
+                <a href="#" class="card-link">Ссылка</a>
+            </div>
+        </div>
+        <div class="card col-12 col-md mx-1 my-2">
+            <div class="card-body text-center">
+                <h4 class="card-title">Algebra</h4>
+                <img src="img/photo (2).jpg" alt="photo(2).jpg">
+                <p class="card-text">Коли здав сесію без талонів</p>
+                <a href="#" class="card-link">Ссылка</a>
+            </div>
+        </div>
+        <div class="card col-12 col-md mx-1 my-2">
+            <div class="card-body text-right">
+                <h4 class="card-title">Graphics</h4>
+                <img src="img/photo (3).jpg" alt="photo(3).jpg">
+                <p class="card-text">Я самий лучший програміст</p>
+                <a href="#" class="card-link">Ссылка</a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider d-md-block d-none">
+
+    <div class="answer">
+        <p></p>
+    </div>
+
+    <div class="container" id="zadachi">
+        <div class="row">
+            <div class="col-12 col-md-6 my-4">
+                <div class="mycard">
+                    <div class="front">
+                        <h2 class="featurette-heading">Задача</h2>
+                        <p>1 + 1 ?</p>
+                    </div>
+                    <div class="back">
+                        <input class="form-control w-100" placeholder="Введіть відповідь" type="text">
+                        <button type="button" class="btn btn-info" data-index="0">Відповісти</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 my-4">
+                <div class="mycard">
+                    <div class="front">
+                        <h2 class="featurette-heading">Задача</h2>
+                        <p>1 + 1 ?</p>
+                    </div>
+                    <div class="back">
+                        <form name="zadach">
+                            <input name="zadach" id="check_one_one" type="checkbox">
+                            <label for="check_one_one">One</label>
+                            <input name="zadach" id="check_one_two" type="checkbox">
+                            <label for="check_one_two">Two</label>
+                            <input name="zadach" id="check_one_three" type="checkbox">
+                            <label for="check_one_three">Three</label>
+                            <input name="zadach" id="check_one_four" type="checkbox">
+                            <label for="check_one_four">Four</label>
+                        </form>
+                        <button type="button" class="btn btn-info" data-index="0">Відповісти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider d-md-block d-none">
+
+        <div class="row">
+            <div class="col-12 col-md-6 my-4">
+                <div class="mycard">
+                    <div class="front">
+                        <h2 class="featurette-heading">Задача</h2>
+                        <p>1 + 1 ?</p>
+                    </div>
+                    <div class="back">
+                        <form name="zadacha">
+                            <input name="zadacha" id="radio_one_one" type="radio">
+                            <label for="radio_one_one">One</label>
+                            <input name="zadacha" id="radio_one_two" type="radio">
+                            <label for="radio_one_two">Two</label>
+                            <input name="zadacha" id="radio_one_three" type="radio">
+                            <label for="radio_one_three">Three</label>
+                            <input name="zadacha" id="radio_one_four" type="radio">
+                            <label for="radio_one_four">Four</label>
+                        </form>
+                        <button type="button" class="btn btn-info" data-index="0">Відповісти</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-4">
+                    <div class="mycard">
+                        <div class="front">
+                            <h2 class="featurette-heading">Задача</h2>
+                            <p>1 + 1 ?</p>
+                        </div>
+                        <div class="back">
+                            <input class="form-control w-100" placeholder="Введіть відповідь" type="text">
+                            <input class="form-control w-100" placeholder="Введіть відповідь" type="text">
+                            <button type="button" class="btn btn-info" data-index="0">Відповісти</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <canvas style="display: block; margin: auto" id="scene" width="800" height="600"></canvas>
+        <div class="d-flex justify-content-center my-3">
+            <button class="btn btn-outline-primary" onclick="restart();init();drawScene()">START</button>
+        </div>
+    </div>
+
+    <div class="jumbotron footer text-center">
+        <h4>Special for labs of WEB</h4>
+    </div>
+</body>
+</html>

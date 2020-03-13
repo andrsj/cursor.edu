@@ -1,0 +1,67 @@
+body > .row{
+    margin: 0;
+}
+nav {    background: linear-gradient(90deg, #3f51b5, #00bcd4);}
+div{
+    /* border: 1px solid red; */
+}
+
+.carousel-item{
+    height: 700px;
+}
+.carousel-item .container input {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.carousel-item img{
+    height: 500px; 
+    margin-left: 20%; 
+    margin-top: 20px;
+}
+.carousel-inner .carousel-item{
+    background: linear-gradient(90deg, #3f51b5, #00bcd4);
+}
+ol.carousel-indicators li.active{
+    background-color: red;
+}
+.nav-tabs{
+    border-radius: 0 10px 10px 10px;
+}
+.tab-content{
+    background: linear-gradient(-90deg, #3f51b5, #00bcd4);
+    min-height: 100px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.lol{
+    background: rgba(226,226,226,1)  
+    linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 19%, rgba(254,254,254,1) 90%);
+}
+.figure img{
+    margin: 20px;
+}
+.social img{ 
+    height: 100px; 
+    padding: 10px;
+}
+.social img[src*="face"]{
+    background-color: #007bff;
+    border-radius: 20px;
+}
+.social img[src*="ins"]{
+    background: linear-gradient(45deg, #FCAE45, #A234B0);
+    border-radius: 20px;
+}
+.social img[src*="vk"]{
+    background-color: #4C8BF5;
+    border-radius: 20px;
+}
+.social img[src*="tele"]{
+    background-color: #419FD9;
+    border-radius: 20px;
+}
+.social img[src*="you"]{
+    background-color: red;
+    border-radius: 20px;
+}

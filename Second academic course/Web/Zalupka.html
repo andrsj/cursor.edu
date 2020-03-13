@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZALUPKA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<body>
+<div>
+<script>
+    var line="Біжуча стрічка";
+    var speed=150;
+    var i=0;
+    function m_line() {
+        if(i++<line.length) {
+            document.cit.forum.value=line.substring(0,i);
+        }
+        else{
+            document.cit.forum.value=" ";
+            i=0;
+            }
+        setTimeout('m_line()',speed);
+        }
+</script>
+
+    <form name=cit>
+        <input type=text size=20 name=forum class="form-control w-25">
+    </form>
+
+<script>
+    m_line();
+</script>
+    
+
+    <img src="img/eye.svg" name="eye" width="102px" onMouseOver="bigPict()">
+    <script>
+        function bigPict(){
+            var w = document.eye.width;
+            if (w<302){
+                document.eye.width = w + 10;
+                document.eye.src="img/eye.svg"
+                setTimeout("bigPict()", 100)
+            }
+            else{ 
+                document.eye.width = w - 200;
+            }
+        }
+    </script>
+
+    <img src="img/star.svg" name="pict" width="100px" onmouseover="changePict()">
+    <script>
+        function changePict(){
+            var one = document.pict.src;
+            if(one == "http://127.0.0.1:5500/img/star.svg"){
+            document.pict.src="img/clock.svg";
+            
+            }
+            else{
+                document.pict.src="img/star.svg";
+            }
+        }
+    </script>
+
+    <br>
+    <script>
+        function lol(){
+            var result = parseInt($("#fisrtinput").val()) + parseInt($("#secondinput").val());
+            $("p#answerplus").text("Answer : " + result + " = " + $("#fisrtinput").val() + " + " + $("#secondinput").val());
+            setTimeout(function(){
+                $("p#answerplus").text("");
+            },2000)
+        };
+    </script>
+    <input type="text" id="fisrtinput" class="form-control w-25">
+    <br>
+    <input type="text" id="secondinput" class="form-control w-25">
+    <br>
+    <button id="submit" onclick="lol()" class="btn btn-dark"> Enter </button>
+    <p id="answerplus"></p>
+</div>
+</body>
+</html>

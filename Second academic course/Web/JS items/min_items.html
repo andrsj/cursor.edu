@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/min_items.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="popup" onclick="functions()">
+        Click me!
+        <span class="popuptext" id="myPopup">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, eum.
+        </span>
+    </div>
+
+    <script>
+    function functions(){
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    </script>
+
+    
+
+    <button class="accordion">Look at me 1 </button>
+    <div class="panel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis quo eveniet laboriosam, atque perspiciatis nobis rerum maxime labore! Laborum?
+    </div>
+    <button class="accordion">Look at me 2 </button>
+    <div class="panel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis quo eveniet laboriosam, atque perspiciatis nobis rerum maxime labore! Laborum?
+    </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for(i=0; i<acc.length; i++){
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+    </script>
+
+<div class="container" style="margin-top: 10px;">
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+    Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+    Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+    Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+    Tooltip on left
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+        Tooltip with HTML
+    </button>
+
+    <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</div>
+</body>
+</html>

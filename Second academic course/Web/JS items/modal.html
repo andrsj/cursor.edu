@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modals</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+    <link href="css/modal1.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div id="myVanilaModalbtn">Open vanila modal</div>
+    <div id="myVanilaModal" class="modal">
+        <div class="modal__content">
+            <p class="closed">&times;</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae culpa non veniam temporibus, optio ipsam, tempora dolore iusto numquam quam quaerat. Molestiae adipisci voluptatum iusto repellat, voluptatibus tempora deserunt.</p>
+        </div>
+    </div>
+    <div id="myVanilaModalbtn1">Open vanila modal</div>
+    <div id="myVanilaModal1" class="modal1">
+        <div class="modal__content1">
+            <p class="closed1">&times;</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae culpa non veniam temporibus, optio ipsam, tempora dolore iusto numquam quam quaerat. Molestiae adipisci voluptatum iusto repellat, voluptatibus tempora deserunt.</p>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
+    <script src="js/modalQuery.js"></script>
+
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

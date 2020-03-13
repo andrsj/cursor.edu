@@ -1,0 +1,71 @@
+body{
+    font-size: 20px; 
+    background-color: #E0F0B8;
+}
+.jumbotron{
+    background: url(/img/bg.jpg);
+    color: #4b6b07;
+    text-shadow: 3px 3px 3px #4b6b07;
+}
+.badge-primary{
+    background-color: #E0F0B8;
+    color: #f1e39d;
+    text-shadow: 0px 0px 5px black;
+}
+nav{
+    margin: 1em 0;
+    background-color: #f1e39d;
+}
+button.navbar-toggler {
+    background-color: #E0F0B8;
+}
+/* Всі елементи span що є у button */
+button.navbar-toggler > span{
+    z-index: 10;
+}
+/* Селектор по атрибуту */
+input[placeholder=Search]{
+    background-color: #E0F0B8;
+}
+/* Селектор по атрибуту що ПОЧИНАЄТЬСЯ на */
+input[placeholder^=Вв]{
+    background-color: #f1e39d;
+}
+/* Селектор по атрибуту що ПОЧИНАЄТЬСЯ на ... і має фокус*/
+input[placeholder^=Вв]:focus{
+    background-color: #c9bd81;
+}
+
+a{
+    color: #709f0b;
+    transition: 0.5s;
+}
+a:hover{
+    color: #4b6b07;
+    text-shadow: 5px 5px 3px #709F0B;
+}
+.advertising{
+    /* Висота
+    Ширина
+    Флексовий блок
+    Розмістити по центру по осі
+    Розмістити по центру по осі
+    Фоновий колір */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAE8B2;
+}
+.btn{
+    margin: 5px;
+    background-color: #4b6b07;
+    color: #709f0b;
+}
+.btn:hover{
+    color: black;
+}
+.footer{
+    margin: 0;
+}

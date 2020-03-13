@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+    <link href="style/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="img/icon.ico" rel="icon"> 
+    <title>Математика для дітей</title>
+</head>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<!-- <script src="js/script.js"></script> -->
+<script src="js/updatedScript.js"></script>
+
+<body >
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/icon.ico" width="30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Математика <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Інші предмети</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#">Скоро буде</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Для батьків</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" href="#">Матеріали для дітей</a>
+                    <a class="dropdown-item" href="#">Навчання дітей по відео</a>
+                    <a class="dropdown-item" href="#">Корисні поради для батьків</a>
+                </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Пошук">
+            </form>
+        </div>
+    </nav>
+
+      
+<main role="main">      
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Привіт, учню!</h1>
+                
+                <p class="col col-sm-12">Сьогодні ми пройдемо пару задач по геометрії. Навчимося рахувати та обчислювати 
+                    геометричні фігури, досліджувати їх властивості та навчимося їх розрізняти.
+                </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                    Уроки алгебри »
+                </button>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Скоро буде</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                            Адміністратор сайту не встигає написати задачі , які ти хочеш так 
+                            розв'язати , але ти можеш допомогти девелоперу , написавши приклади 
+                            задач , які б ти хотів розв'язати) <br>
+                            Так що або чекай , або допомагай)
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Закрити</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+
+            <div class="col-12 mb-4 col-md-6">
+                <h2>Алгебра</h2>
+                <p>Алгебра - наука , що займається числами та методами їх обрахування. 
+                    Звісно без алгебри нікуди, так як вона пригодиться всюди , але пам'ятай: 
+                    лише знаючи усю математику , ти зможеш досягти успіху </p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                    Уроки алгебри »
+                </button>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Скоро буде</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                            Якщо ти так спішиш відкрити двері у таку науку, як 
+                            Алгебру , то напиши адміністратору , щоб він пошвидше 
+                            завершив роботу над задачами по цій цариці наук.
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Закрити</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-12 col-md-6 geom">
+                <h2>Геометрія</h2>
+                <p>Цариця науки ніяк не обійдеться без фігурного представлення чисел. Завдяки геометрії 
+                    Ти зможеш описати світ через фігури та спроектувати різні предмети такими, якими Ти хочеш
+                </p>
+                <p><a class="btn btn-secondary disabled" href="#" role="button">Уроки геометрії »</a></p>
+            </div>
+        </div>       
+    </div> <!-- /container -->
+
+    <hr class="w-100">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="7" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="8" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/dot-circle.svg" style="padding-left: 1%">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>Задача 1</h1>
+                        <p>Скільки КРУГІВ є на зображені? </p>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                        data-target="#demo">Відповісти</button>
+                        <div id="demo" class="collapse">
+                            <input class="form-control w-75" type="text" placeholder="Введіть відповідь" 
+                            id="one_input">
+                            <div>
+                                <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                                data-target="#demo1" id="one">Перевірити</button><br>
+                                <div id="demo1" class="collapse collapse_content">
+                                    <p id="one_answer"></p>
+                                </div>
+                                <p class="timer"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <img src="img/clock.svg">
+                    <div class="carousel-caption text-left">
+                    <h1>Задача 2</h1>
+                    <p>Скільки є фігур в годиннику?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-75" type="text" placeholder="Введіть відповідь"
+                        id="two_input">
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo2" id="two">Перевірити</button><br>
+                            <div id="demo2" class="collapse collapse_content">
+                                <p id="two_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <img src="img/star.svg">
+                    <div class="carousel-caption text-left">
+                    <h1>Задача 3</h1>
+                    <p>Скільки прямих є в зірці?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-75" type="text" placeholder="Введіть відповідь"
+                        id="three_input">
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo3" id="three">Перевірити</button><br>
+                            <div id="demo3" class="collapse collapse_content">
+                                <p id="three_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/arrow-right.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption">
+                    <h1>Задача 4</h1>
+                    <p>Скільки прямих містить в собі стрілка?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-75" type="text" placeholder="Введіть відповідь"
+                        id="four_input">
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo4" id="four">Перевірити</button><br>
+                            <div id="demo4" class="collapse collapse_content">
+                                <p id="four_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                    <div class="container">
+                        <img src="img/exclamation-triangle.svg">
+                    <div class="carousel-caption text-right">
+                    <h1>Задача 5</h1>
+                    <p>Скільки сторін є в значку трикутника?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-75" type="text" placeholder="Введіть відповідь"
+                        id="five_input">
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo5" id="five">Перевірити</button><br>
+                            <div id="demo5" class="collapse collapse_content">
+                                <p id="five_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/bicycle.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                    <h1>Задача 6</h1>
+                    <p>Скільки фігур має зображення "велосипед"?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-75" type="text" placeholder="Введіть відповідь"
+                        id="six_input">
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo6" id="six">Перевірити</button><br>
+                            <div id="demo6" class="collapse collapse_content">
+                                <p id="six_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item figure">
+                <img src="img/circle.svg">
+                <img src="img/circle.svg">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                    <h1>Задача 7</h1>
+                    <p>Чи однакові фігури? ("Так" або "Ні")</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="form-control w-75" type="text" placeholder="Введіть відповідь"
+                        id="seven_input">
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo7" id="seven">Перевірити</button><br>
+                            <div id="demo7" class="collapse collapse_content">
+                                <p id="seven_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                    <div class="container">
+                        <img src="img/clock.svg">
+                        <div class="carousel-caption text-left">
+                        <h1>Задача 8</h1>
+                        <p>True, False, True, False</p>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                        data-target="#demo">Відповісти</button>
+                        <div id="demo" class="collapse">
+                            <input class="" type="checkbox" id="check_one_one">
+                            <label for="check_one_one">One</label>
+                            <input class="" type="checkbox" id="check_one_two">
+                            <label for="check_one_one">Two</label>
+                            <input class="" type="checkbox" id="check_one_three">
+                            <label for="check_one_one">Three</label>
+                            <input class="" type="checkbox" id="check_one_four">
+                            <label for="check_one_one">Four</label>
+                            <div>
+                                <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                                data-target="#demo8" id="eight">Перевірити</button><br>
+                                <div id="demo8" class="collapse collapse_content">
+                                    <p id="eight_answer"></p>
+                                </div>
+                                <p class="timer"></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+                <div class="container">
+                    <img src="img/clock.svg">
+                    <div class="carousel-caption text-left">
+                    <h1>Задача 9</h1>
+                    <p>True, True, False, False</p>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+                    data-target="#demo">Відповісти</button>
+                    <div id="demo" class="collapse">
+                        <input class="" type="checkbox" id="check_one_one">
+                        <label for="check_one_one">One</label>
+                        <input class="" type="checkbox" id="check_one_two">
+                        <label for="check_one_one">Two</label>
+                        <input class="" type="checkbox" id="check_one_three">
+                        <label for="check_one_one">Three</label>
+                        <input class="" type="checkbox" id="check_one_four">
+                        <label for="check_one_one">Four</label>
+                        <div>
+                            <button type="button" class="btn btn-primary w-75" data-toggle="collapse" 
+                            data-target="#demo9" id="nine">Перевірити</button><br>
+                            <div id="demo9" class="collapse collapse_content">
+                                <p id="nine_answer"></p>
+                            </div>
+                            <p class="timer"></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</main>
+
+<hr class="w-100">
+
+<div class="container mt-3">
+    <h2>Сьогодні ми навчилися:</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs tabs">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">|     1      |</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">|      2      |</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">|      3      |</a>
+    </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+            <h3>Проектувати предмети через фігури</h3>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Рахувати фігури в предметах</h3>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+            <h3>Порівнювати фігури між собою</h3>
+        </div>
+    </div>
+</div>
+
+<hr class="w-100">
+
+<div class="container-fluid jumbotron lol ">
+    <div class="row">
+        <div class="col-lg-4 col-xl-4 col-md-12">
+            <h3>Сайт розроблений для лабораторної роботи</h3>
+            Студентом групи ФеІ-22
+            <br>
+            Деркачем Андрієм
+        </div>
+        <div class="col-xl-6 col-lg-8 col-md-12 pt-sm-3 offset-xl-1 social" style="text-align: center">
+            <a href="#"><img src="img/facebook.svg"></a>
+            <a href="#"><img src="img/instagram.svg"></a>
+            <a href="#"><img src="img/vk.svg"></a>
+            <a href="#"><img src="img/telegram.svg"></a>
+            <a href="#"><img src="img/youtube.svg"></a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+    background-color: #00bcd4;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    margin: 2px;
+}
+.header{
+    background: linear-gradient(90deg, #3f51b5, #00bcd4);
+    text-align: left;
+    padding-left: 10%;
+}
+
+.header ul li{
+    display: inline-block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.content-1{
+    box-sizing: border-box;
+    background-color: lightgray;
+    text-align: left;
+    padding: 5% 55% 50px 10%;
+}
+
+
+.content-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(138, 138, 138);
+}
+.left{
+    box-sizing: border-box;
+    flex-basis: 50%;
+    padding: 20px 10px 10px 100px;
+    text-align: left;
+}
+.right{
+    box-sizing: border-box;
+    flex-basis: 50%;
+    padding: 20px 10px 10px 100px;
+    text-align: left;
+}
+
+.content-3{
+    background: linear-gradient(90deg, #3f51b5, #00bcd4);
+    padding-bottom: 10px;
+}
+
+.content-4{
+    padding-bottom: 10px;
+}
+.content-4 h2{
+    text-align: left;
+}
+.container-90{
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: lightgray;
+    display: flex;
+}
+.left-footer{
+    flex-basis: 50%;
+    padding: 10px 200px 10px 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.right-footer{
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.right-footer img{
+    height: 100px;
+}

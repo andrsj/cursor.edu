@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#myVanilaModalbtn{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background-color: black;
+    opacity: 0.9;
+    overflow: auto;
+}
+.modal__content{
+    background-color: cyan;
+    opacity: 1;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin: 100px 100px;
+    position: relative;
+}
+.closed{
+    line-height: 30px;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+}

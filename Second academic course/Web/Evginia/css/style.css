@@ -1,0 +1,96 @@
+html,body{
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(60deg, #1594a7,#94e5f2)
+}
+.navbar-brand{
+    text-shadow: 1px 1px 5px white;
+}
+.dropdown-menu{
+    background: url("/img/bg.jpg");
+    background-size: cover;
+}
+.form-control{
+    margin: 1em;
+}
+.info{
+    margin: 1em;
+    text-shadow: 1px 1px 15px black;
+}
+.card{
+    font-size: 15px;
+}
+.card-body img{
+    width: 90%;
+    margin: auto;
+}
+.card-link{
+    text-shadow: 2px 2px 7px skyblue;
+}
+.mycard{
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+}
+.mycard .front,.mycard .back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    backface-visibility: hidden;
+    padding: 1em;
+}
+.front{
+    height: 100%;
+    background: linear-gradient(-60deg, #1594a7,#94e5f2);
+    border-radius: 10px;
+}
+.back{
+    height: 100%;
+    background: linear-gradient(60deg, #1594a7,#94e5f2);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+.mycard:hover .front { transform: rotateY(180deg); }
+.mycard:hover .back  { transform: rotateY(360deg); }
+
+.answer{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: chartreuse;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.footer{
+    margin-bottom: 0;
+    border-radius: 0px;
+    background: linear-gradient(30deg, #1594a7,#94e5f2)
+}
+.footer h4{
+    text-shadow: 1px 1px 5px white;
+    color: white;
+}
+button:hover{
+    filter: hue-rotate(10deg);
+    box-shadow: 5px 5px 13px 0px rgba(0, 141, 255, 1);
+}
+

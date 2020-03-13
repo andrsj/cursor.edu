@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <address hidden>Andrew Derkach</address>
+</head>
+
+<style>
+body
+{
+    width: 90%;
+    border: 2px solid;
+    margin: 0 auto;
+    text-align: center;
+    font-family: arial;
+}
+main
+{
+    width: 80%;
+    height: 600px;
+    float: left;
+    margin : -1px;
+    border: 1px solid;
+}
+aside
+{
+    float: left;
+    width: 20%;
+    height: 600px;
+    margin : -1px;
+    border: 1px solid;
+}
+p.left-align
+{
+    text-align: left; 
+    margin-left: 5%;
+}
+table 
+{
+    width: 100%;
+    border: 1px solid;
+}
+td
+{
+    border: 1px solid;
+}
+</style>
+
+
+
+<body>
+
+    <header style="border: 1px solid;">
+        <h1>С/С++/C#</h1>
+    </header>
+    
+    <nav style="border: 1px solid; height: 100px;">
+        <div style="width: 20%; float: left;">
+            <a href="https://t.me/senpai_without_tyan"><img src="img/telegram.png" width="60px"></a> 
+            
+            <a href="https://www.instagram.com/andrsj.derkach/"><img src="img/instagram.png" width="50px"></a>
+        </div>
+        <h3 style="width: 60%;float: left;">Початок вивчення С#</h3>
+        <div style="width: 20%; float: right" >
+                <form style="text-align: right;">
+                    Login:<input type="text" name="Login" value=""><br>
+                    Password:<input type="password" name="Password" value=""><br>
+                    <input type="submit" value="Log In">
+                </form>
+        </div>
+    </nav>
+
+    <div>
+        <main>
+            <div>
+                <h4>Перша програма!</h4>
+                <p class="left-align"><i>Зараз ми ознайомимося як створити свою першу програму на С#!</i></p>
+            </div>
+
+            <div>
+                <p class="left-align">Для початку треба ознайомитися з нашим компілятором для С#: <br>
+                Зайдемо в консоль: Win + R -> cmd ; Tа введемо "<code>csc.exe /? > help.txt</code>". 
+                Після цієї команди ми можемо в файлі <b>help.txt</b> ознайомитися з командами компілятора <b>csc.exe</b>.
+                Після ознайомлення з компілятором можна починати створення власної першої програми! <br>
+                Створимо текстовий файл у якому введемо даний код:</p>
+                <code><pre style="text-align: left;">
+                using System;
+                class Hello  
+                {
+                    public static void Main()
+                    {          
+                        Console.WriteLine("Hello world!");
+                    }
+                }</pre></code>
+                <p class="left-align">Збережемо цей файл у форматі <b>*.cs</b>. Та запустимо на компілювання
+                командою "<code>csc.exe *.cs</code>". <br> У результаті ми отримаємо програму <b>"*.exe"</b>
+                Запустимо програму:</p>
+                <img src="img/Hello.png" alt="Console.png" usemap="#Navigation" width="900px" height="110px"> 
+                <map name="#Navigation">
+                    <area shape="rect" coords="0,0,10,10" alt="helloworld" href="https://www.helloworld.com/">
+                    <area shape="rect" coords="10,10,50,50" alt="google" href="https://www.google.com/">
+                </map> 
+            </div>
+            
+            <div>
+                <p class="left-align">В першому нашому уроці ми навчилися писати свої програми на С#</p>
+            </div>
+        </main>
+        <aside>
+            <h4>Короткі відомості про курс:</h4>
+            <p class="left-aling">Цей курс спрямований на вивчення <b>.Net</b> технологій</p>
+            <p>&copy; ХІО . Курс кросплатформеного програмування.</p>
+            <div style="margin-left: -20px">
+
+            <ol>
+                <li>C</li>
+                <li value="3">C++</li>
+                <li value="5">C#</li>
+            </ol>
+
+            <ol type="I">
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+            </ol>
+
+            <ol type="A">
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+            </ol>
+                  
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+            </ul>
+            
+            <ul style="list-style-type:circle;">
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+            </ul> 
+
+            </div>
+            <select>
+                <optgroup label="Language">
+                    <option value="english">English</option>
+                    <option value="ukrainian">Ukrainian</option>
+                </optgroup>
+                <optgroup label="Programm language">
+                    <option value="c++">C++</option>
+                    <option value="c#">C#</option>
+                </optgroup>
+            </select> 
+        </aside>
+    </div>
+
+    <footer style="border: 1px solid; margin-top: 600px;">
+            <table>
+                <tr>
+                    <td>Я </td>
+                    <td>Не</td>
+                    <td>Знаю</td>
+                </tr>
+                <tr>
+                    <td>Що</td>
+                    <td>Тут</td>
+                    <td>Писати</td>
+                </tr>
+            </table>
+            <form style="margin: 10px" name="mark">
+                <fieldset>
+                    <legend>Форма для оцінки:</legend>
+                    <label for="mark">Оцінка:<br> </label>
+                         <input type="radio" name="mark" value="1" /> 1
+                         <input type="radio" name="mark" value="2" /> 2
+                         <input type="radio" name="mark" value="3" /> 3
+                         <input type="radio" name="mark" value="4" /> 4
+                         <input type="radio" name="mark" value="5" checked/> 5
+                         <br>
+                         <input type="submit" value="Оцінити">
+                         <input type="reset" value="Очистити">
+                         <input type="checkbox" checked> Виконано всі умови?
+                         <input type="checkbox" checked> Андрій неймовірний студент?
+                </fieldset>
+            </form>
+    </footer>
+</body>
+
+</html>
