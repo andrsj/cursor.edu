@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <link href="carousel.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div style="text-align: center">
+        <p id='output'></p>
+        <input type="file" accept="image/*" onchange="setSrc(event);create(event);createIcon(event)">
+        <input type="button" value="Gallery" onclick="initGallery(this);nextImage();">
+        
+        <div class="gallery">
+            <div class="gallery-container">
+                <div class="gallery-item" style="width: 100%; height: 100%; background-color: aqua" id="delete"></div>
+            </div>
+            <div class="gallery-controls"></div>
+            <div class="icons"></div>
+        </div>
+        <script src="carousel.js"></script>
+    </div>
+</body>
+</html>

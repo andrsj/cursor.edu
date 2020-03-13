@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<script src="jquery-3.4.1.js"></script>
+<script src="bootstrap.bundle.js"></script>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="telegram.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Site</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Соц мережі</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <a class="dropdown-item" href="#">Інстаграм</a>
+                <a class="dropdown-item" href="#">Телеграм</a>
+                <a class="dropdown-item" href="#">Youtube</a>
+            </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Пошук">
+        </form>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="card col m-5">
+        <div class="card-body"><!-- Начало текстового контента -->
+            <h4 class="card-title">Веб сторінки</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Створюю веб сторінки різної важкості</h6>
+            <p class="card-text">Чистий JS та чистий CSS - моя фішка</p>
+            <a href="#" class="card-link">Перший сайт</a>
+            <a href="#" class="card-link">Останній сайт</a>
+        </div><!-- Конец текстового контента -->
+    </div><!-- Конец карточки -->
+    <div class="card col m-5">
+        <div class="card-body"><!-- Начало текстового контента -->
+            <h4 class="card-title">Python скріпти</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Треба виконати коротку роботу?</h6>
+            <p class="card-text">Напишу скріпт для будь-яких ваших мікро-задач</p>
+            <a href="#" class="card-link">Python scripts</a>
+            <a href="#" class="card-link">Python documentation</a>
+        </div><!-- Конец текстового контента -->
+    </div><!-- Конец карточки -->
+    <div class="card col m-5">
+        <div class="card-body"><!-- Начало текстового контента -->
+            <h4 class="card-title">Python програми</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Виконати кластеризацію? Проаналізувати дані?</h6>
+            <p class="card-text">Напишу програми використовуючи складні бібліотеки для ваших задач</p>
+            <a href="#" class="card-link">Програми</a>
+            <a href="#" class="card-link">Python doc</a>
+        </div><!-- Конец текстового контента -->
+    </div><!-- Конец карточки -->
+</div>
+
+<main role="main">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+                <div class="carousel-caption text-left">
+                <h1>Web сторінки</h1>
+                <p>Використання різних фраємворків для дизайну</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Поглянути приклади</a></p>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+                <div class="carousel-caption">
+                <h1>Python скріпти</h1>
+                <p>Які можуть бути мікро-задачі? Ну наприклад посортувати файли за спец параметрами</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Вивчити більше</a></p>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+                <div class="carousel-caption text-right">
+                <h1>Python програми</h1>
+                <p>Використання Numpy, Scipy, Pandas, Matplotlib і т.д.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Продовжити...</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-1">Hello, world!</h1>
+            <p>Я хочу вас ознайомити вас зі своїми витворами мистецтва. Програми, які я пишу, поки можна використовувати безплатно для здач лабораторних робіт / курсових і тому подібні роботи! Для більш складних робіт я об'єднаю всі свої знання з тих трьох факторів, що є в наявності.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        </div>
+    </div>
+        
+    <hr>
+        
+    </div> <!-- /container -->
+</main>
+
+
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>About Me</h2>
+            <h5>Photo:</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Дивіться, який я милий тут :)</p>
+            <h3>Корисні посилання</h3>
+            <p>Можете ознайомитися з моїми роботами:</p>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Цікаві роботи</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Лабораторні</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Курсові</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#">Скріпти</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+        </div> 
+        <div class="col-sm-8">
+            <h2>Приклад робіт</h2>
+            <h5>Останнє оновлення, Nov 12, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Мої роботи</h2>
+    <p>The form below contains two dropdown menus (select lists):</p>
+    <form>
+        <div class="form-group">
+            <label for="sel1">Select list (select one):</label>
+            <select class="form-control" id="sel1" name="sellist1">
+                <option>Сайти без бібліотек</option>
+                <option>Сайти на фраємворках</option>
+                <option>Python scripts</option>
+                <option>Python programs</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Позиркати <span class="badge badge-warning">:)</span></button>
+    </form>
+</div>
+
+<div class="container mt-3">
+    <h2>Вау, твій код просто БІМБА!</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Веб</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Скріпти</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Програми</a>
+    </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+            <h3>Веб</h3>
+            <p>Чистий код!</p>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Скріпти</h3>
+            <p>Оптимізація!</p>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+            <h3>Програми</h3>
+            <p>Велика швидкість обчислень!</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container mt-3">
+    <h2>Більше інформації!</h2>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModa">
+        Дізнатися <span class="badge badge-pill badge-danger">!</span>
+    </button>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="myModa">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">МІЙ КОД прийняв сам Зіновій Михайлович!</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                "Ну Андрій просто молодчинка, перший хто здав лабораторні з Інтелектуального аналізу даних!"
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- <div class="container">
+    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+    <div class="row">
+        <div class="col-6">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-secondary">Secondary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-danger">Danger</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+            <span class="badge badge-dark">Dark</span>
+        </div>
+        <div class="col-6">
+            <span class="badge badge-pill badge-primary">Primary</span>
+            <span class="badge badge-pill badge-secondary">Secondary</span>
+            <span class="badge badge-pill badge-success">Success</span>
+            <span class="badge badge-pill badge-danger">Danger</span>
+            <span class="badge badge-pill badge-warning">Warning</span>
+            <span class="badge badge-pill badge-info">Info</span>
+            <span class="badge badge-pill badge-light">Light</span>
+            <span class="badge badge-pill badge-dark">Dark</span>
+        </div>
+    </div>
+</div> -->
+
+<div class="jumbotron text-center mt-5" style="margin-bottom:0">
+    <p>Footer</p>
+</div>
+
+</body>
+
+</html>

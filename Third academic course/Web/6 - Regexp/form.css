@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    padding: 0 0 0 20px;
+    width: 10%;
+}
+p{
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+input[type="text"], input[type="password"]{
+    width: 200px;
+    margin: 10px; 
+}
+input[type="file"]{
+    padding: 0 0 0 10px;
+    width: 20%;
+}
+textarea{
+    width: 65%;
+    height: 100px;
+    margin: 10px;
+}
+input[type="button"]{
+    width: 200px;
+    margin: 0 0 0 10px;
+}

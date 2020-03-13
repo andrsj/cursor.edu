@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script> 
+function f(n){
+$.getJSON('datas.json', {}, function(json) {
+$("#username").val( json["data"][n].name )
+$("#userage").val( json["data"][n].age )
+})
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" value="" id="username" /> <br/>
+<input type="text" value="" id="userage" /> <br/>
+</form>
+<button value = "User1" onclick="f(0)">User1</button>
+<button value = "User2" onclick="f(1)">User2</button>
+</body>
+</html>

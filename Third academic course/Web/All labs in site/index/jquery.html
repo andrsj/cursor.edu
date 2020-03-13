@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../style/bootstrap.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Лабораторна робота 5</title>
+</head>
+
+
+<body>
+    <nav></nav>
+    <div></div>
+    <div class="jumbotron text-center">
+        <h1>TEST jQuery</h1>
+    </div>
+    <div class="row">
+    <div class = "col-10 text-center">
+        <hr>
+        <div class="container-fluid">
+            <div class="text-query">Text</div>
+            <div class="center">
+                <input type="button" value="Toggle" onclick="toggled()">
+                <input type="button" value="Bold" onclick="bolded()">
+                <input type="button" value="Color" onclick="colored()">
+            </div>
+        </div>
+    
+        <div class="container-fluid">
+            <div class="center">
+                <div class="lol-query" onclick="animated()"></div>
+            </div>
+        </div>
+    
+        <div class="jumbotron mt-3 position-relative">
+            <div class="block-query" onclick="moved()"></div>
+        </div>
+
+        <div class="container-fluid img-anime">
+            <img id="img" src="../img/youtube.png" alt="Youtube logo" onmouseover="animeover()" onmouseout="animeout()">
+            <input type="button" value="Opacity" onclick="change()">
+        </div>
+
+        <div class="jumbotron">
+            <div class="tables">
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                </table>
+            </div>
+            <button class="btn btn-danger" onclick="changetable()">Змінити</button>
+        </div>
+
+        <div class="container-fluid">
+            <h3>Форма з автозаповненням</h3>
+            <input id="auto" type="text">
+            <div id="List"></div>
+        </div>
+    </div>
+    <div class="col-2 text-center">TEXT</div>
+    </div>
+
+    <footer class="jumbotron text-center">
+        Цей сайт виконано для лабораторної роботи 
+        <br> 
+        студентом групи ФеІ-32 Деркачем Андрієм
+    </footer>
+
+</body>
+<script src="../js/nav2.js"></script>
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/jquery.js"></script>
+
+</html>

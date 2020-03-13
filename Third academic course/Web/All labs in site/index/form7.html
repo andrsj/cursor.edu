@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style/bootstrap-reboot.css">
+        <link rel="stylesheet" href="../style/bootstrap.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+    <div></div>
+    
+    <div class="container-fluid text-center mb-4">
+        <h1>FORM</h1>
+    </div>
+    <div class="row">
+    <div class="col-10">
+    <div class = "form">
+        <h1>Form</h1>
+        <form name="form">
+            <input type="text" name="form" id="firstname" placeholder="Ім'я" onkeyup="checkname(this)">
+            <input type="text" name="form" id="lastname" placeholder="Прізвище" onkeyup="checklastname(this)">
+            <input type="text" name="form" id="date" placeholder="Дата народження" onkeyup="checkdate(this)">
+            <input type="text" name="form" id="email" placeholder="email: example@gmail.com" onkeyup="checkemail(this)">
+            <p class="language">Які мови програмування ти знаєш?</p>
+            <label><input type="checkbox" id=""> C</label>
+            <label><input type="checkbox" id=""> C++</label>
+            <label><input type="checkbox" id=""> JavaScript</label>
+            <label><input type="checkbox" id=""> Python</label>
+            <label><input type="checkbox" id=""> Java</label>
+            <label><input type="checkbox" id=""> HTML/CSS</label>
+            <label ><input type="checkbox" id=""> Perl</label>
+            <textarea placeholder="Напишіть про свої інтереси" onkeyup="checktext(this)"></textarea>
+            <input type="file" accept="image/*" name="form" id="photo" onchange="checkphoto(this)">
+            <input type="password" name="form" id="pass1" placeholder="Password" onkeyup="checkpass(this)">
+            <input type="password" name="form" id="pass2" placeholder="Rewrite password">
+            <input type="button" value="Реєстрація" onclick="validate();printinfo(valid)">
+        </form>
+    </div>
+    </div>
+    <div class="col-2 text-center">TEXT</div>
+    </div>
+    <footer class="jumbotron text-center">
+        Цей сайт виконано для лабораторної роботи 
+        <br> 
+        студентом групи ФеІ-32 Деркачем Андрієм
+    </footer>
+    <script src="../js/nav2.js"></script>
+    <script src="../js/form7.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../style/bootstrap.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <nav></nav>
+    <div></div>
+
+    <div class="container-fluid text-center mb-4">
+        <h1>Calculator</h1>
+    </div>
+
+    <div class = "row">
+    <div class = "col-10 text-center">
+    <div class="container-fluid p-1 text-center">
+        <form name="calc" id="calculator">
+            <div><input type="text" name="input" size="15" class="input"></div>
+            <div class="buttons">
+                <input type="button" value="1" OnClick="calc.input.value += '1'">
+                <input type="button" value="2" OnClick="calc.input.value += '2'">
+                <input type="button" value="3" OnClick="calc.input.value += '3'">
+                <input type="button" value="+" OnClick="getOper('+')">
+                <br>
+                <input type="button" value="4" OnClick="calc.input.value += '4'">
+                <input type="button" value="5" OnClick="calc.input.value += '5'">
+                <input type="button" value="6" OnClick="calc.input.value += '6'">
+                <input type="button" value="-" OnClick="getOper('-')">
+                <br>
+                <input type="button" value="7" OnClick="calc.input.value += '7'">
+                <input type="button" value="8" OnClick="calc.input.value += '8'">
+                <input type="button" value="9" OnClick="calc.input.value += '9'">
+                <input type="button" value="x" OnClick="getOper('*')">
+                <br>
+                <input type="button" value="c" OnClick="calc.input.value = ''">
+                <input type="button" value="0" OnClick="calc.input.value += '0'">
+                <input type="button" value="=" OnClick="final()">
+                <input type="button" value="/" OnClick="getOper('/')">
+                <br>
+                <input type="button" value="." Onclick="for(i of calc.input.value){ if (i == '.') return false}calc.input.value +='.'">
+            </div>
+        </form>
+    </div>
+    </div>
+    <div class="col-2 text-center">TEXT</div>
+    </div>
+    <footer class="jumbotron text-center">
+        Цей сайт виконано для лабораторної роботи 
+        <br> 
+        студентом групи ФеІ-32 Деркачем Андрієм
+    </footer>
+    <script src="../js/nav2.js"></script>
+    <script src="../js/calc.js"></script>
+</body>
+</html>

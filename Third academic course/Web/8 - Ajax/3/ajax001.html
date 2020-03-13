@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script>
+function loadXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// код для IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp = new XMLHttpRequest();
+  }
+else
+  {// код для IE6, IE5
+  xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","ajax.txt",false);
+xmlhttp.send();
+document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+}
+</script>
+</head>
+<body>
+
+<div id="myDiv"><h2>Содержимое данного блока изменится</h2></div>
+<button type="button" onclick="loadXMLDoc()">Изменить предложение</button>
+
+</body>
+</html>

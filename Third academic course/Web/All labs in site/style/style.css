@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+nav{
+    /* padding:0 15% 10px 15%; */
+    height: auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+}
+
+nav > .menu{
+    height: 100%;
+    /* width: 33%; */
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+    background-color: lightgray;
+    transition: all 0.3s;
+}
+nav > .menu:hover{
+    background-color: rgb(184, 184, 184);
+}
+nav > .menu > p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav > .menu > .sub{
+    width: 66%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+nav > .menu > .sub > div > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+nav > .menu > .sub > div:hover > a{color: white;}
+nav > .menu > .sub > div{
+    position: relative;
+    background-color: grey;
+    transition: background-color 0.3s;
+    height: 30px;
+}
+nav > .menu > .sub > div:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+nav > .menu > .sub > div > .suub{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}
+nav > .menu > .sub > div > .suubr{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}
+nav > .menu > .sub > div > .suub > div,
+nav > .menu > .sub > div > .suubr > div{
+    /* width: 50%; */
+    background-color: rgb(104, 104, 104);
+    transition: background-color 0.3s;
+    height: 100%;
+}
+nav > .menu > .sub > div > .suub > div:hover,
+nav > .menu > .sub > div > .suubr > div:hover{
+    background-color: rgb(64, 64, 64);
+}
+nav > .menu > .sub > div > .suub > div > a,
+nav > .menu > .sub > div > .suubr > div > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.clear{
+    clear: both;
+    margin-top: 120px;
+}
+
+
+form#calculator > div > input{
+	margin: 10px;
+}
+form#calculator > div > input.input{
+    width: 200px;
+}
+
+.text-query{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 10px auto;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lol-query{
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.block-query{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.img-anime{
+    height: 200px;
+    position: relative;
+}
+
+#img{
+    position: absolute;
+    height: 100px;
+    left: 100px;
+}
+
+.tables{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tables table tr,
+.tables table tr td{
+    padding: 20px;
+    font-weight: bold;
+}
+
+#List ul{
+    width:100px;
+    padding: 0;
+}
+#List ul li{
+    list-style-type: none;
+}

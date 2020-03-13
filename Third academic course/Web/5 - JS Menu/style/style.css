@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+
+nav{
+    /* padding:0 15% 10px 15%; */
+    height: auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+}
+
+nav > .menu{
+    height: 100%;
+    /* width: 33%; */
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+    background-color: lightgray;
+    transition: all 0.3s;
+}
+nav > .menu:hover{
+    background-color: rgb(184, 184, 184);
+}
+nav > .menu > p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav > .menu > .sub{
+    width: 66%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+nav > .menu > .sub > div{
+    position: relative;
+    background-color: grey;
+    transition: background-color 0.3s;
+    height: 30px;
+}
+nav > .menu > .sub > div:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+nav > .menu > .sub > div > .suub{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}
+nav > .menu > .sub > div > .suubr{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}
+nav > .menu > .sub > div > .suub > div,
+nav > .menu > .sub > div > .suubr > div{
+    /* width: 50%; */
+    background-color: rgb(104, 104, 104);
+    transition: background-color 0.3s;
+    height: 100%;
+}
+nav > .menu > .sub > div > .suub > div:hover,
+nav > .menu > .sub > div > .suubr > div:hover{
+    background-color: rgb(64, 64, 64);
+}
+nav > .menu > .sub > div > .suub > div > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.clear{
+    clear: both;
+    margin-top: 120px;
+}
+
+#myCarousel{
+    margin: 0;
+    padding: 0;
+}
+
+.bottom{
+    width: 25%;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    margin: auto auto;
+}
+
+#rec,#again,#noanswer{
+    margin-top: 10px;
+}
+form#calculator > div > input{
+	margin: 10px;
+}
+form#calculator > div > input.input{
+    width: 200px;
+}
+.calendar{
+    margin-top: 100px;
+    padding: 0 25% 0 25%;
+}

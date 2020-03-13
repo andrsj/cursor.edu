@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" accept="image/*" multiple="multiple" onchange="test2(this)">
+    <input type="button" value="LOL" onclick="test()">
+    <script>
+        const test = (event) => {
+            console.log(event.target.previousElementSibling)
+        }
+        const test2 = (event) => {
+            console.log(event.files);
+            let i = 0;
+            while(event.files){
+                let img = document.createElement('img');
+                img.src = URL.createObjectURL(event.files[i]);
+                i++;
+                document.body.append(img);
+            }
+        }
+    </script>
+</body>
+</html>

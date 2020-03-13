@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<input type="file" accept="image/*" onchange="loadFile(event)">
+	<img id="output1"/>
+	
+	<script>
+		var loadFile = function(event) {
+		var output = document.getElementById('output1');
+		output.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
+
+	<input type="file" accept="image/*" onchange="loadFile1(event)">
+	<img id="output2"/>
+
+	<script>
+		var loadFile1 = function(event) {
+		var reader = new FileReader();
+		reader.onload = function(){
+			var output = document.getElementById('output2');
+			output.src = reader.result;
+		};
+		reader.readAsDataURL(event.target.files[0]);
+		};
+	</script>
+
+<img id="blah" alt="your image" width="100" height="100" />
+<input type="file" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+</body>
+</html>
+
+

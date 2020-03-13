@@ -1,0 +1,22 @@
+.bottom{
+    width: 25%;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    margin: auto auto;
+}
+#noanswer{
+    margin-top: 10px;
+}
+#rec,#again{
+    margin-top: 10px;
+}
+form#calculator > div > input{
+	margin: 10px;
+}
+form#calculator > div > input.input{
+    width: 200px;
+}
+.calendar{
+    margin-top: 100px;
+    padding: 0 25% 0 25%;
+}
